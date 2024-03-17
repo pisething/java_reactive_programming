@@ -18,7 +18,7 @@ public class Demo6Pipeline {
 			.subscribeOn(Schedulers.boundedElastic())
 			.subscribe(x -> System.out.println(x));
 		getName();
-		Util.delay(4);
+		Util.sleep(4);
 		
 		//block
 		//user from database by id
@@ -37,7 +37,7 @@ public class Demo6Pipeline {
 		System.out.println("Entering to method");
 		return Mono.fromSupplier(() ->{
 			System.out.println("Generating name ...");
-			Util.delay(3);
+			Util.sleep(3);
 			return Faker.instance().country().name();
 		}).map(x -> x.toUpperCase());
 		 

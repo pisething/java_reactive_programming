@@ -21,7 +21,7 @@ public class ColorGenerator {
 	}
 
 	private String getColor() {
-		Util.delay(1);
+		Util.sleep(1);
 		return Util.faker().color().name();
 	}
 }

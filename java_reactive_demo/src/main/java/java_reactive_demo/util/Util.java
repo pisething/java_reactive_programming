@@ -20,7 +20,7 @@ public class Util {
 		return () -> System.out.println("onComplete: Done");
 	}
 	
-	public static void delay(int second) {
+	public static void sleep(int second) {
 		try {
 			Thread.sleep(second * 1000);
 		} catch (InterruptedException e) {

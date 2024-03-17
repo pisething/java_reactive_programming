@@ -42,11 +42,11 @@ public class Flux7CustomSubscriber {
 		});
 	
 		atomicReference.get().request(5);
-		Util.delay(2);
+		Util.sleep(2);
 		atomicReference.get().request(5);
-		Util.delay(2);
+		Util.sleep(2);
 		atomicReference.get().cancel();
-		Util.delay(3);
+		Util.sleep(3);
 		atomicReference.get().request(5);
 	
 	}

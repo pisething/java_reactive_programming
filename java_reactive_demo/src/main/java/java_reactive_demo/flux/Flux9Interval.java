@@ -12,7 +12,7 @@ public class Flux9Interval {
 		Flux.interval(Duration.ofSeconds(2))
 			.subscribe(x -> System.out.println(x));
 		
-		Util.delay(6);
+		Util.sleep(6);
 	
 	}
 
